@@ -5,6 +5,8 @@ body{
     min-height: 100vh;
     margin: 0px;
     background-color: #F5EFE7;
+    display: flex;
+    flex-direction: column;
 }
 
 .header{
@@ -45,7 +47,9 @@ body{
     justify-content: center;
 }
 
-
+footer{
+  margin-top: auto;
+}
 
 .footer{
     display: flex;
@@ -54,7 +58,6 @@ body{
     margin-top: 10%;
     min-height: 10vh;
     background-color: #213555;
-    bottom: 0px;
     width: 100%;
 }
 
