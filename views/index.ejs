@@ -1,0 +1,37 @@
+<%- include("partials/header.ejs") %>
+
+    <h3 class="animate__animated animate__backInRight" id="ques">What do You want ?</h3>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4 cards_heading">
+        <div class="col">
+          <div class="card h-100" style="padding-right: 36px;">
+            <div class="card-body">
+              <div class="custom_button">
+                <button class="button-48" role="button" onclick="window.location.href='/latest_rates'"><span class="text"><h5 class="card-title">Latest Rates</h5></span></button>
+              </div>
+              <p class="card-text">Fetch the latest currency exchange rates. Rates quote against the Euro by default however you can choose any other base currency in place of EUR.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" style="padding-right: 36px;">
+            <div class="card-body">
+              <div class="custom_button">
+                <button class="button-48" role="button" onclick="window.location.href='/conversion'"><span class="text"><h5 class="card-title">Conversion</h5></span></button>
+              </div>
+              <p class="card-text" style="text-align: center;">Convert a specific amount of money from one currency to another using our up-to-date currency exchange rate conversions.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" style="padding-right: 36px;">
+            <div class="card-body">
+              <div class="custom_button">
+                <button class="button-48" role="button" onclick="window.location.href='/historical_rates'"><span class="text"><h5 class="card-title">Historical Rates</h5></span></button>
+              </div>
+              <p class="card-text">Retrieve historical exchange rates for a specific currency between a defined start date and end date. Visualize these results through a graphical representation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+<%- include("partials/footer.ejs") %>

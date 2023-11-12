@@ -1,0 +1,69 @@
+<%- include("partials/header.ejs") %>
+<body>
+    <p class="animate__animated animate__fadeIn" id="title2">Retrieve Historical Rates</p>
+    <div class="labels_container">
+
+        <form action="/historical_rates" method="POST" >
+            <div class="labels_dropdown">
+                    <h4 style="display: inline-block;" class="labels">Initial Date :</h4>
+                    <input type="text" name="start_date" id="input_task" placeholder="YYYY-MM-DD" style="padding-left: 2px; padding-right: 2px; padding-top: 8px; padding-bottom: 8px; text-align: center;" required>
+            </div>
+
+            <div class="labels_dropdown">
+                <h4 style="display: inline-block;" class="labels">End Date :</h4>
+                <input type="text" name="end_date" id="input_task" placeholder="YYYY-MM-DD" style="padding-left: 2px; padding-right: 2px; padding-top: 8px; padding-bottom: 8px; text-align: center;" required>
+        </div>
+
+            <div class="labels_dropdown">
+                    <h4 style="margin-right: 10px;"> Currency :</h4>
+                    <select name="currency" class="dropdown-menu position-static d-grid gap-1 p-2 rounded-3 mx-0 shadow w-220px" style="margin: 0px; display: inline!important;" data-bs-theme="light">
+                        <% if (locals.data){%>
+                            <%Object.keys(data).forEach((currency)=> { %>
+                                    <option><%=currency%></option>                   
+                            <%}) %>
+                        <%}%>       
+                    </select> 
+            </div>
+
+            <div class="labels_dropdown">
+                <h4 style="margin-right: 10px;">Base :</h4>
+                <select name="base" class="dropdown-menu position-static d-grid gap-1 p-2 rounded-3 mx-0 shadow w-220px" style="margin: 0px; display: inline!important;" data-bs-theme="light">
+                    <% if (locals.data){%>
+                        <%Object.keys(data).forEach((currency)=> { %>
+                                <option><%=currency%></option>                   
+                        <%}) %>
+                    <%}%>       
+                </select> 
+            </div>
+                <div class="retrieve">
+                    <button class="btn btn-dark rounded-pill px-3" type="submit" id="retrieveButton">Retrieve</button> 
+                </div>
+                
+            <div id="chart">
+                <div id="chart_resize">
+                    <% if (locals.chart){%>
+                        <%- chart %>
+                    <%}%>
+                    <% if (locals.info){%>
+                        <p id="error"><%= info %></p>
+                    <%}%> 
+                    <% if (locals.info_date){%>
+                        <p id="error"><%= info_date %></p>
+                    <%}%> 
+                    <% if (locals.info_dateGap){%>
+                        <p id="error"><%= info_dateGap %></p>
+                    <%}%>  
+                    <% if (locals.info_dateFormat){%>
+                        <p id="error"><%= info_dateFormat %></p>
+                    <%}%>   
+                </div>           
+            </div>
+                   
+                
+
+
+        </form>
+    </div>
+
+
+<%- include("partials/footer.ejs") %>
