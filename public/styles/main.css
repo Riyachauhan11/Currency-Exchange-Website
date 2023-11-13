@@ -191,7 +191,7 @@ input[type=text] {
 
 #conversion{
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   margin-top: 20px;
 }
 
@@ -402,7 +402,7 @@ body {
   display: flex;
   justify-content: center;
   width: 400px;
-  height: 90px;
+  height: auto;
   background: #213555;
   margin: auto;
   border: 2px solid #213555;
@@ -412,7 +412,6 @@ body {
   top: 50px;
   cursor: pointer;
   margin-bottom: 100px;
-  padding-top: 4px;
   transition: 500ms ease;
 }
 .box:before {
@@ -421,7 +420,7 @@ body {
   height: 2px;
   content: "";
   background: #ee6c4d;
-  top: -2px;
+  top: -1px;
   left: -2px;
   transition: 100ms width ease 300ms;
   -web-kit-transition: 100ms width ease 300ms;
@@ -434,8 +433,8 @@ body {
   background: #ee6c4d;
   top: -2px;
   right: -2px;
-  transition: 100ms height ease 200ms;
-  -web-kit-transition: 100ms height ease 200ms;
+  transition: 100ms height ease 300ms;
+  -web-kit-transition: 100ms height ease 300ms;
 }
 .box-inner:after {
   position: absolute;
@@ -469,7 +468,7 @@ body {
   -web-kit-transition: 100ms width ease 0ms;
 }
 .box:hover:after {
-  height: 90px;
+  height: auto;
   transition: 100ms height ease 100ms;
   -web-kit-transition: 100ms height ease 100ms;
 }
@@ -479,7 +478,7 @@ body {
   -web-kit-transition: 100ms width ease 200ms;
 }
 .box:hover .box-inner:before {
-  height: 90px;
+  height: auto;
   transition: 100ms height ease 300ms;
   -web-kit-transition: 100ms height ease 300ms;
 }
