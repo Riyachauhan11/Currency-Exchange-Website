@@ -1,6 +1,33 @@
+# 💱 Currency Exchange Rates & Conversions
 
-The Currency Exchange Rates and Conversions website efficiently provides users with real-time foreign exchange data sourced from the Frankfurter API, tracking references published by the European Central Bank. Users can seamlessly access up-to-date currency exchange rates, convert specific amounts between currencies, and retrieve and visualize historical exchange rates for a chosen currency within defined start and end dates.
+A web application that delivers real-time foreign exchange data, powered by the [Frankfurter API](https://www.frankfurter.app/docs/) and based on references from the European Central Bank (ECB). Users can:
 
-Hosted online using Render : https://currency-exchange-jhe1.onrender.com/
+- View current exchange rates for global currencies
+- Convert specific amounts between selected currencies
+- Select a date range to fetch and visualize historical exchange rates as an interactive line chart
 
-Link of API Used : https://www.frankfurter.app/docs/
+🔗 **Live Site**: [currency-exchange-jhe1.onrender.com](https://currency-exchange-jhe1.onrender.com/)
+
+---
+
+## 🔧 Tech Stack
+
+- **Backend**: Node.js, Express.js  
+- **Frontend**: EJS, Bootstrap  
+- **External API**: Frankfurter API  
+
+---
+
+## 📊 Features
+
+- Real-time currency conversion
+- Currency rate visualization using charts
+- Historical data lookup with start and end dates
+
+---
+
+## 📸 How it Looks like
+
+> https://github.com/user-attachments/assets/55b81470-461c-4113-a4ac-71de8898dd8d
+
+
